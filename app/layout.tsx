@@ -1,11 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin", "vietnamese"],
+const dmSans = DM_Sans({
+  subsets: ["latin", "latin-ext"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-dm-sans",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin", "latin-ext", "vietnamese"],
+  display: "swap",
+  variable: "--font-playfair",
 });
 
 export const viewport: Viewport = {
@@ -78,8 +84,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="vi" className={`dark ${inter.variable}`} suppressHydrationWarning>
-      <body className={inter.className}>{children}</body>
+    <html lang="vi" className={`dark ${dmSans.variable} ${playfair.variable}`} suppressHydrationWarning>
+      <body className={dmSans.className}>{children}</body>
     </html>
   );
 }

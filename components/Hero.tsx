@@ -60,14 +60,12 @@ export default function Hero() {
                 </div>
               </a>
 
-              <h1 className="mx-auto mt-8 max-w-4xl text-balance text-6xl font-bold md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                Khai Phá Tiềm Năng Thực Sự
+              <h1 className="mx-auto mt-8 text-[clamp(1.75rem,7vw,5.25rem)] font-bold whitespace-nowrap lg:mt-16">
+                Tiềm Năng Chưa Thấy
               </h1>
 
               <p className="mx-auto mt-8 max-w-2xl text-balance text-lg text-muted-foreground">
-                Phân tích khuôn mặt bằng AI giúp đánh giá điểm hấp dẫn, xác
-                định những đặc điểm nổi bật nhất và xây dựng lộ trình cải thiện
-                ngoại hình cá nhân hóa cho bạn.
+              AI phân tích khuôn mặt — đánh giá điểm hấp dẫn, highlight đặc điểm nổi bật, và đề xuất lộ trình cải thiện riêng cho bạn.
               </p>
             </AnimatedGroup>
 
