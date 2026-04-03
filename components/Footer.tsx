@@ -60,7 +60,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="#"
+              href="https://www.tiktok.com/@glowmax.vn"
               className="text-muted-foreground transition-colors hover:text-foreground"
               aria-label="TikTok"
             >
